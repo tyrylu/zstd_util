@@ -1,6 +1,6 @@
 [package]
 name = "zstd_util"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Lukáš Tyrychtr <lukastyrychtr@gmail.com>"]
 description = "A simple zstd_safe based compression and decompression wrapper"
 license = "MIT"
@@ -10,9 +10,9 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-log = "0.4"
-zstd-safe = "3"
-thiserror = "1"
+log = "0.4.14"
+zstd-safe = "4.1.1"
+thiserror = "1.0.30"
 
 [dev_dependencies]
 env_logger = "0.8"

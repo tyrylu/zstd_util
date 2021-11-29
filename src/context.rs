@@ -47,7 +47,7 @@ impl<'a> ZstdContext<'a> {
         let mut compressed = Vec::new();
         compressed.resize(zstd_safe::compress_bound(data.len()), 0);
         let start = Instant::now();
-        let compressed_size = self.compression_context.compress2(&mut compressed, &data)?;
+        let compressed_size = self.compression_context.compress2(compressed.as_mut_slice(), &data)?;
         compressed.resize(compressed_size as usize, 0);
         trace!(
             "Compressed {} to {} bytes in {:?}.",
@@ -64,7 +64,7 @@ impl<'a> ZstdContext<'a> {
         original.resize(zstd_safe::get_frame_content_size(&compressed) as usize, 0);
         let start = Instant::now();
         self.decompression_context
-            .decompress(&mut original, &compressed)?;
+            .decompress(original.as_mut_slice(), &compressed)?;
         trace!(
             "Decompressed {} to {} bytes in {:?}.",
             compressed.len(),
