@@ -19,7 +19,7 @@ impl<'a> ZstdContext<'a> {
         let mut cctx = CCtx::create();
         let mut dctx = DCtx::create();
         let cdict = match dictionary {
-            Some(ref dict_data) => {
+            Some(dict_data) => {
                 let dict = CDict::create(dict_data, compression_level);
                 cctx.ref_cdict(&dict)
                     .expect("Failed to associate compression dictionary");
@@ -31,7 +31,7 @@ impl<'a> ZstdContext<'a> {
                 None
             }
         };
-        if let Some(ref dict_data) = dictionary {
+        if let Some(dict_data) = dictionary {
             dctx.load_dictionary(dict_data)
                 .expect("Failed to associate decompression dictionary");
         }
