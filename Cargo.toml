@@ -1,11 +1,11 @@
 [package]
 name = "zstd_util"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Lukáš Tyrychtr <lukastyrychtr@gmail.com>"]
 description = "A simple zstd_safe based compression and decompression wrapper"
 license = "MIT"
 repository = "https://github.com/tyrylu/zstd_util"
-edition = "2018"
+edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
