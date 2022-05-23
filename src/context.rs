@@ -20,7 +20,7 @@ impl<'a> ZstdContext<'a> {
         let mut dctx = DCtx::create();
         let cdict = match dictionary {
             Some(ref dict_data) => {
-                let dict = CDict::create(&dict_data, compression_level);
+                let dict = CDict::create(dict_data, compression_level);
                 cctx.ref_cdict(&dict)
                     .expect("Failed to associate compression dictionary");
                 Some(dict)
@@ -32,7 +32,7 @@ impl<'a> ZstdContext<'a> {
             }
         };
         if let Some(ref dict_data) = dictionary {
-            dctx.load_dictionary(&dict_data)
+            dctx.load_dictionary(dict_data)
                 .expect("Failed to associate decompression dictionary");
         }
         Self {
@@ -47,7 +47,7 @@ impl<'a> ZstdContext<'a> {
         let mut compressed = Vec::new();
         compressed.resize(zstd_safe::compress_bound(data.len()), 0);
         let start = Instant::now();
-        let compressed_size = self.compression_context.compress2(compressed.as_mut_slice(), &data)?;
+        let compressed_size = self.compression_context.compress2(compressed.as_mut_slice(), data)?;
         compressed.resize(compressed_size as usize, 0);
         trace!(
             "Compressed {} to {} bytes in {:?}.",
@@ -61,10 +61,10 @@ impl<'a> ZstdContext<'a> {
     /// Decompresses a previously compressed data using the parameters given during construction. Mainly, the used dictionary must match, if any.
     pub fn decompress(&mut self, compressed: &[u8]) -> Result<Vec<u8>> {
         let mut original = Vec::new();
-        original.resize(zstd_safe::get_frame_content_size(&compressed) as usize, 0);
+        original.resize(zstd_safe::get_frame_content_size(compressed) as usize, 0);
         let start = Instant::now();
         self.decompression_context
-            .decompress(original.as_mut_slice(), &compressed)?;
+            .decompress(original.as_mut_slice(), compressed)?;
         trace!(
             "Decompressed {} to {} bytes in {:?}.",
             compressed.len(),
