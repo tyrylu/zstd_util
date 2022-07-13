@@ -7,13 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## v0.1.2 (2022-07-13)
 
+### Chore
+
+ - <csr-id-07777b424dfdbd742220b9e7ad4afc235251259f/> Add a changelog
+
 ### Commit Statistics
 
 <csr-read-only-do-not-edit/>
 
- - 3 commits contributed to the release.
- - 174 days passed between releases.
- - 0 commits where understood as [conventional](https://www.conventionalcommits.org).
+ - 4 commits contributed to the release over the course of 51 calendar days.
+ - 225 days passed between releases.
+ - 1 commit where understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' where seen in commit messages
 
 ### Commit Details
@@ -23,6 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <details><summary>view details</summary>
 
  * **Uncategorized**
+    - Add a changelog ([`07777b4`](https://github.comgit//tyrylu/zstd_util/commit/07777b424dfdbd742220b9e7ad4afc235251259f))
     - Bump version and update to the 2021 edition ([`93b8234`](https://github.comgit//tyrylu/zstd_util/commit/93b82349fd9c8ac6aaa2a636d9ddeff8b81ca47a))
     - Make clippy happy ([`e708b17`](https://github.comgit//tyrylu/zstd_util/commit/e708b178cfc59e0fb5bc5916f485832c41ddac6e))
     - Update dependencies ([`0932a25`](https://github.comgit//tyrylu/zstd_util/commit/0932a250d5c687b53df3449706f2cb83f076e365))
