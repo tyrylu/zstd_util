@@ -44,8 +44,7 @@ impl<'a> ZstdContext<'a> {
 
     /// Compresses a slice of bytes using the parameters set during construction.
     pub fn compress(&mut self, data: &[u8]) -> Result<Vec<u8>> {
-        let mut compressed = Vec::new();
-        compressed.resize(zstd_safe::compress_bound(data.len()), 0);
+        let mut compressed = vec![0; zstd_safe::compress_bound(data.len())];
         let start = Instant::now();
         let compressed_size = self
             .compression_context
@@ -62,13 +61,11 @@ impl<'a> ZstdContext<'a> {
 
     /// Decompresses a previously compressed data using the parameters given during construction. Mainly, the used dictionary must match, if any.
     pub fn decompress(&mut self, compressed: &[u8]) -> Result<Vec<u8>> {
-        let mut original = Vec::new();
-        original.resize(
+        let mut original = vec![0;
             zstd_safe::get_frame_content_size(compressed)
                 .unwrap_or(Some(1024))
-                .unwrap_or(1024) as usize,
-            0,
-        );
+                .unwrap_or(1024) as usize
+        ];
         let start = Instant::now();
         self.decompression_context
             .decompress(original.as_mut_slice(), compressed)?;
