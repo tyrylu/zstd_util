@@ -1,6 +1,6 @@
 [package]
 name = "zstd_util"
-version = "0.1.3"
+version = "0.1.4"
 authors = ["Lukáš Tyrychtr <lukastyrychtr@gmail.com>"]
 description = "A simple zstd_safe based compression and decompression wrapper"
 license = "MIT"

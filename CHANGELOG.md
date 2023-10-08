@@ -5,7 +5,42 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.1.4 (2023-10-08)
+
+### Chore
+
+ - <csr-id-05b6c701052fb782df174add5d00e4885b462848/> Update deps
+ - <csr-id-cf8db7e97018fe55a9b43d4efb5d198dcb6f8144/> Add dependabot configuration and a basic CI
+
+### Bug Fixes
+
+ - <csr-id-628f12ab4dce2a7955b80341b1325f2d58c24236/> Apply Clippy suggestions
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 4 commits contributed to the release over the course of 263 calendar days.
+ - 263 days passed between releases.
+ - 3 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Apply Clippy suggestions ([`628f12a`](https://github.com/tyrylu/zstd_util/commit/628f12ab4dce2a7955b80341b1325f2d58c24236))
+    - Update deps ([`05b6c70`](https://github.com/tyrylu/zstd_util/commit/05b6c701052fb782df174add5d00e4885b462848))
+    - Run rustfmt ([`910eae3`](https://github.com/tyrylu/zstd_util/commit/910eae3fc0fec32c3bb933bcee4bc26584d64146))
+    - Add dependabot configuration and a basic CI ([`cf8db7e`](https://github.com/tyrylu/zstd_util/commit/cf8db7e97018fe55a9b43d4efb5d198dcb6f8144))
+</details>
+
 ## v0.1.3 (2023-01-17)
+
+<csr-id-4d46d2ba08be620e5cbe45c82f806dacac5889aa/>
 
 ### Chore
 
@@ -15,7 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <csr-read-only-do-not-edit/>
 
- - 2 commits contributed to the release over the course of 160 calendar days.
+ - 3 commits contributed to the release over the course of 160 calendar days.
  - 188 days passed between releases.
  - 1 commit was understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
@@ -27,6 +62,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <details><summary>view details</summary>
 
  * **Uncategorized**
+    - Release zstd_util v0.1.3 ([`d9d2b58`](https://github.com/tyrylu/zstd_util/commit/d9d2b5859744fb1b210a18813afefa8463eaa7a3))
     - Bump zstd_safe ([`d12317f`](https://github.com/tyrylu/zstd_util/commit/d12317f4f5da1b274d8858d274f38b34a1c7aa72))
     - Bump thiserror ([`4d46d2b`](https://github.com/tyrylu/zstd_util/commit/4d46d2ba08be620e5cbe45c82f806dacac5889aa))
 </details>
