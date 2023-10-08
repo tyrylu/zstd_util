@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## v0.1.4 (2023-10-08)
 
+<csr-id-05b6c701052fb782df174add5d00e4885b462848/>
+<csr-id-cf8db7e97018fe55a9b43d4efb5d198dcb6f8144/>
+
 ### Chore
 
  - <csr-id-05b6c701052fb782df174add5d00e4885b462848/> Update deps
@@ -20,7 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <csr-read-only-do-not-edit/>
 
- - 4 commits contributed to the release over the course of 263 calendar days.
+ - 8 commits contributed to the release over the course of 263 calendar days.
  - 263 days passed between releases.
  - 3 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
@@ -32,8 +35,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <details><summary>view details</summary>
 
  * **Uncategorized**
+    - Merge branch 'main' of github.com:tyrylu/zstd_util ([`22d10fa`](https://github.com/tyrylu/zstd_util/commit/22d10fa5df08cb719f2c4a8ed65f94735be283e9))
+    - Release zstd_util v0.1.4 ([`3d1d4b8`](https://github.com/tyrylu/zstd_util/commit/3d1d4b834a538eb57e1bc3ddb71ae1a67bb950d9))
     - Apply Clippy suggestions ([`628f12a`](https://github.com/tyrylu/zstd_util/commit/628f12ab4dce2a7955b80341b1325f2d58c24236))
     - Update deps ([`05b6c70`](https://github.com/tyrylu/zstd_util/commit/05b6c701052fb782df174add5d00e4885b462848))
+    - Merge pull request #1 from tyrylu/dependabot/github_actions/actions/checkout-4 ([`b16ece4`](https://github.com/tyrylu/zstd_util/commit/b16ece407b66ddaec8b06b84bed14b0127b4e7e0))
+    - Bump actions/checkout from 3 to 4 ([`cacf9e5`](https://github.com/tyrylu/zstd_util/commit/cacf9e501a69dc8724898e8eb9de82bbabfbdceb))
     - Run rustfmt ([`910eae3`](https://github.com/tyrylu/zstd_util/commit/910eae3fc0fec32c3bb933bcee4bc26584d64146))
     - Add dependabot configuration and a basic CI ([`cf8db7e`](https://github.com/tyrylu/zstd_util/commit/cf8db7e97018fe55a9b43d4efb5d198dcb6f8144))
 </details>
