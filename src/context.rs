@@ -61,7 +61,8 @@ impl<'a> ZstdContext<'a> {
 
     /// Decompresses a previously compressed data using the parameters given during construction. Mainly, the used dictionary must match, if any.
     pub fn decompress(&mut self, compressed: &[u8]) -> Result<Vec<u8>> {
-        let mut original = vec![0;
+        let mut original = vec![
+            0;
             zstd_safe::get_frame_content_size(compressed)
                 .unwrap_or(Some(1024))
                 .unwrap_or(1024) as usize
