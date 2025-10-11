@@ -10,9 +10,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-log = "0.4.20"
-zstd-safe = "7.0.0"
-thiserror = "2.0.12"
+log = "0.4.28"
+zstd-safe = "7.2.4"
+thiserror = "2.0.17"
 
 [dev_dependencies]
 env_logger = "0.8"
