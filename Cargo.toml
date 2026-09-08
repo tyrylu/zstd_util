@@ -11,7 +11,7 @@ edition = "2021"
 
 [dependencies]
 log = "0.4.28"
-zstd-safe = "7.2.4"
+zstd-safe = "8.0.0"
 thiserror = "2.0.17"
 
 [dev_dependencies]
